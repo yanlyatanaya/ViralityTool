@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralityTool | AI Video Processor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#6E56CF',
+                        darkBg: '#0A0A0A',
+                        cardBg: '#121212',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #6E56CF, #8B77DF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-white font-sans antialiased selection:bg-brand selection:text-white">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center font-bold">⚡</div>
+            <span class="text-xl font-bold tracking-tight">ViralityTool</span>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white transition">Documentation</a>
+            <a href="#pricing" class="bg-brand hover:bg-opacity-90 px-5 py-2 rounded-full font-semibold transition shadow-[0_0_15px_rgba(110,86,207,0.4)]">
+                Pro Plan
+            </a>
+        </div>
+    </nav>
+
+    <main class="text-center pt-24 pb-16 px-4">
+        <div class="flex justify-center items-center space-x-4 text-sm text-gray-500 mb-8">
+            <span class="flex items-center border border-brand/30 bg-brand/10 text-brand px-3 py-1 rounded-full"><span class="w-5 h-5 border rounded-full text-xs flex items-center justify-center mr-2 border-brand">1</span> Import</span>
+            <span class="w-8 h-px bg-gray-700"></span>
+            <span class="flex items-center"><span class="w-5 h-5 border rounded-full text-xs flex items-center justify-center mr-2 border-gray-600">2</span> Analyze</span>
+            <span class="w-8 h-px bg-gray-700"></span>
+            <span class="flex items-center"><span class="w-5 h-5 border rounded-full text-xs flex items-center justify-center mr-2 border-gray-600">3</span> Results</span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+            Turn Long Videos into <span class="gradient-text">Viral Shorts</span>
+        </h1>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
+            Powered by DeepSeek-V3. Identify the best moments, auto-crop to 9:16, and run high-precision video processing natively on your PC.
+        </p>
+
+        <div class="max-w-4xl mx-auto border border-gray-800 bg-cardBg rounded-2xl p-8 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-brand opacity-20 blur-[100px] pointer-events-none"></div>
+
+            <div class="border border-yellow-700/50 bg-yellow-900/20 text-yellow-500 text-sm font-semibold px-4 py-2 rounded-lg inline-flex items-center mb-8">
+                <span class="mr-2">ⓘ</span> RECOMMENDED: RUN LOCALLY FOR UNLIMITED FILE SIZES
+            </div>
+
+            <div class="flex justify-center space-x-4 mb-8">
+                <div class="px-6 py-3 border border-gray-700 rounded-lg text-gray-300 flex items-center bg-gray-800/50"><span class="mr-2">📁</span> Local Path</div>
+                <div class="px-6 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white flex items-center"><span class="mr-2">↑</span> Browser Upload</div>
+            </div>
+
+            <div class="border border-dashed border-gray-700 rounded-xl py-16 flex flex-col items-center justify-center bg-darkBg/50">
+                <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">High Precision Processing</h3>
+                <p class="text-gray-500 text-sm">Download the app to process files up to 2h30 long directly on your hardware.</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="pricing" class="py-20 px-4">
+        <div class="max-w-md mx-auto relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <div class="relative bg-cardBg border border-gray-800 rounded-2xl p-8 text-center flex flex-col">
+                <div class="w-12 h-12 bg-brand/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-brand/30">
+                    <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Single Pro Plan</h3>
+                <p class="text-gray-400 mb-6">Unlimited viral shorts from any video length.</p>
+
+                <div class="mb-6">
+                    <span class="text-5xl font-extrabold">€5</span><span class="text-gray-400">/month</span>
+                    <p class="text-brand text-sm font-bold mt-2 uppercase tracking-wide">Billed Annually (€60/year)</p>
+                </div>
+
+                <ul class="text-left space-y-4 mb-8">
+                    <li class="flex items-center text-gray-300"><span class="text-green-400 mr-3">✔</span> Unlimited AI Analysis</li>
+                    <li class="flex items-center text-gray-300"><span class="text-green-400 mr-3">✔</span> Runs natively on your PC</li>
+                    <li class="flex items-center text-gray-300"><span class="text-green-400 mr-3">✔</span> No Watermark & HD Export</li>
+                </ul>
+
+                <a href="#" class="w-full bg-white text-black font-bold py-3 rounded-lg hover:bg-gray-200 transition shadow-lg mt-auto">
+                    Subscribe & Download
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 py-8 text-center text-gray-500 text-sm mt-12 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8">
+        <div class="flex items-center space-x-2 mb-4 md:mb-0">
+            <span class="w-4 h-4 bg-gray-700 rounded-sm"></span>
+            <span class="font-bold text-gray-300">ViralityTool</span>
+        </div>
+        <p>© 2026 ViralityTool. High precision video processing.</p>
+        <div class="space-x-4">
+            <a href="#" class="hover:text-white transition">PRIVACY</a>
+            <a href="#" class="hover:text-white transition">TERMS</a>
+            <a href="#" class="hover:text-white transition">CONTACT</a>
+        </div>
+    </footer>
+
+</body>
+</html>
